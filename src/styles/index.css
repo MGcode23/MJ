@@ -1,3 +1,51 @@
-/* 
-    General Styles
-*/
+
+.container-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%; 
+    background-color: #212529;
+  }
+  #my-search-list {
+    z-index: 10;
+    max-height: 207px; 
+    overflow-y: auto;
+  }
+  #my-search-list .list-group-item {
+    padding: 0;
+  }
+  #my-search-list a {
+    padding: 8px 16px;
+    display: block;
+  }
+ 
+  a,
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  .dropdown-item {
+    padding: 0;
+    padding-right: 0.25rem;
+  }
+  .dropdown-menu {
+    padding: 0.25rem 0;
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+  .dropdown-item a {
+    padding: 8px 12px;
+    flex-grow: 1;
+  }
+  .back-button {
+    margin-bottom: 0.5em;
+    border: none;
+  }
+  .back-button:hover {
+    background-color: inherit;
+    border: inherit;
+  }
+  .back-button i {
+    margin-right: 0.5em;
+  }
+  
