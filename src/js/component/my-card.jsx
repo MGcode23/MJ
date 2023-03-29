@@ -42,10 +42,10 @@ function MyCard({ item, group, handleClick }) {
         ) : (
           "loading"
         )}
-        <Button variant="outline-primary">
-          <Link to={`${group}/${item.uid}`}>Details</Link>
+<Button variant="outline-danger">
+            <Link to={`${group}/${item.uid}`}>Details</Link>
         </Button>
-        <Button variant="outline-warning" onClick={(e) => handleClick(e, item)}>
+        <Button variant="outline-primary" onClick={(e) => handleClick(e, item)}>
           {item.favorite ? (
             <i className="fa-solid fa-heart"></i>
           ) : (

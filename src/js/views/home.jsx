@@ -10,12 +10,7 @@ function Home() {
   let planetsObj = store.data.planets;
   let vehiclesObj = store.data.vehicles;
   let favoritesObj = { results: store.data.favorites };
-  // next page
-  // if (peopleObj) {
-  //   fetch(peopleObj.next)
-  //     .then((res) => res.json())
-  //     .then((res) => console.log(res));
-  // }
+
 
   return (
     <section className="container container-home">
@@ -25,7 +20,7 @@ function Home() {
       ) : (
         <div className="p-5 border border-light rounded">
           <h3 className="text-light text-center">FAVORITES</h3>
-          <h6 className="text-light">No favorites yet, try adding some!</h6>
+          <h6 className="text-light">Add favorites!</h6>
         </div>
       )}
       {peopleObj ? (

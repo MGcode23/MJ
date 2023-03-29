@@ -86,7 +86,7 @@ function DetailCard({ element, group, handleClick }) {
         <Card.Header as="h3">
           {element.name}
           <Button
-            variant="outline-warning"
+            variant="outline-dark"
             onClick={(e) => handleClick(e, element)}
           >
             {element.favorite ? (
