@@ -48,9 +48,11 @@ export const Navbar = () => {
     setSearch("");
   }
   return (
-    <nav className="navbar navbar-dark bg-dark px-3 container">
+    <nav className="navbar navbar-darl bg-light mb-3 ">
       <Link to="/">
-        <span className="navbar-brand mb-0 h1">STAR WARS</span>
+      <span className="navbar-brand mb-0 h1">
+    <img src="https://cdn.worldvectorlogo.com/logos/star-wars.svg" alt="Logo de Star Wars" width="150px" />
+  </span>
       </Link>
       <div className="ml-auto d-flex gap-3">
         <div className="position-relative">
