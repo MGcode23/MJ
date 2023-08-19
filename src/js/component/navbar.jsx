@@ -48,21 +48,22 @@ export const Navbar = () => {
     setSearch("");
   }
   return (
-    <nav className="navbar navbar-darl bg-light mb-3 ">
-      <Link to="/">
-      <span className="navbar-brand mb-0 h1">
-    <img src="https://cdn.worldvectorlogo.com/logos/star-wars.svg" alt="Logo de Star Wars" width="150px" />
-  </span>
+    <nav className="navbar navbar-dark bg-dark mb-3">
+    <div className="container">
+      <Link to="/" className="navbar-brand">
+        <img src="https://s.yimg.com/ny/api/res/1.2/ucdFBUScjz_c5BaaiSQfbw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTExNzk7Y2Y9d2VicA--/https://media.zenfs.com/en/usa_today_sports_articles_558/70333c62d7ae15076f27d82d14a06957" alt="Logo de Star Wars" width="150px" />
       </Link>
       <div className="ml-auto d-flex gap-3">
         <div className="position-relative">
-          <Form>
+          <Form className="d-flex align-items-center">
             <Form.Control
               type="search"
               placeholder="Search"
               value={search}
               onChange={(e) => handleChange(e)}
-            ></Form.Control>
+              className="mr-2"
+            />
+            <button className="btn btn-primary">Search</button>
           </Form>
           <SearchList
             list={searchResults}
@@ -72,6 +73,7 @@ export const Navbar = () => {
         </div>
         <FavoritesList favs={store.data.favorites} />
       </div>
-    </nav>
+    </div>
+  </nav>
   );
 };

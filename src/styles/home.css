@@ -1,75 +1,98 @@
+/* Cambia todos los colores a la combinación de negro y rojo de los Chicago Bulls */
+
 .container-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .horiz-group {
-    display: flex;
-    overflow-x: auto;
-    gap: 1em;
-    max-width: 100%;
-    padding: 1em;
-    margin-bottom: 2em;
-  }
-  .horiz-group > div {
-    min-width: 290px;
-  }
-  .small-card {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border: none;
-  }
-  .small-card img {
-    width: 290px;
-    height: 290px;
-    object-fit: cover;
-    text-align: center;
-    white-space: pre;
-    line-height: 75px;
-  }
-  #small-card-img-link {
-    height: 290px;
-  }
-  .small-card .card-body {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-  .small-card button:last-child {
-    float: right;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  .detail-card {
-    max-height: 80%;
-    border: none;
-  }
-  .detail-card-body {
-    display: flex;
-    padding: 0;
-    word-wrap: break-word;
-    max-height: 500px;
-  }
-  .detail-card img {
-    max-width: max(30%, 290px);
-    object-fit: cover;
-    max-height: 100%;
-  }
-  .detail-card-body p {
-    margin: 2em;
-    margin-bottom: 2em !important;
-  }
-  .detail-card-body label {
-    margin-top: 0.5em;
-    margin-right: 0.4em;
-    font-weight: bold;
-  }
-  .card-header button {
-    border: none;
-    font-size: 1.5rem;
-    background-color: rgba(247, 247, 247);
-  }
-  .card-header button:hover {
-    background-color: rgba(247, 247, 247);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horiz-group {
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  max-width: 100%;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.horiz-group > div {
+  min-width: 290px;
+}
+
+.small-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: none;
+  /* Cambio de color: */
+  background-color: black;
+  color: red;
+}
+
+.small-card img {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  text-align: center;
+  white-space: pre;
+  line-height: 75px;
+}
+
+#small-card-img-link {
+  height: 290px;
+}
+
+.small-card .card-body {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.small-card button:last-child {
+  float: right;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail-card {
+  max-height: 80%;
+  border: none;
+}
+
+.detail-card-body {
+  display: flex;
+  padding: 0;
+  word-wrap: break-word;
+  max-height: 500px;
+}
+
+.detail-card img {
+  max-width: max(30%, 290px);
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.detail-card-body p {
+  margin: 2em;
+  margin-bottom: 2em !important;
+}
+
+.detail-card-body label {
+  margin-top: 0.5em;
+  margin-right: 0.4em;
+  font-weight: bold;
+}
+
+.card-header button {
+  border: none;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0); /* Transparente */
+  /* Cambio de color: */
+  color: red;
+}
+
+.card-header button:hover {
+  background-color: rgba(0, 0, 0, 0); /* Transparente */
+  /* Cambio de color: */
+  color: black;
+}

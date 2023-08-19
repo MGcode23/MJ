@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <section className="container container-home">
-      <h1 className="text-light">STAR WARS</h1>
+      <h1 className="text-light">Michael Jordan</h1>
       {store.data.favorites.length > 0 ? (
         <CardList obj={favoritesObj} group="favorites" />
       ) : (
